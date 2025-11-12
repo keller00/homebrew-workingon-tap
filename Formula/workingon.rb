@@ -6,7 +6,7 @@ class Workingon < Formula
   license "MIT"
 
   depends_on "rust" => :build
-  depends_on "sqlite" => :build
+  depends_on "sqlite"
 
   def install
     system "cargo", "install", *std_cargo_args
