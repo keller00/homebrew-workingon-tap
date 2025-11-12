@@ -5,6 +5,11 @@ class Workingon < Formula
   sha256 "e0fba6a7c4c2d35614ca1df0e366fb18f1ec64aaa7be4c3476665ee87936f3d4"
   license "MIT"
 
+  livecheck do
+    url :stable
+    regex(/^v?(\d+(?:\.\d+)+)$/i)
+  end
+
   depends_on "rust" => :build
   depends_on "sqlite"
 
@@ -16,10 +21,4 @@ class Workingon < Formula
     system bin/"workingon", "--help"
     system bin/"workingon", "ls"
   end
-
-  livecheck do
-    url :stable
-    regex(/^v?(\d+(?:\.\d+)+)$/i)
-  end
-
 end
