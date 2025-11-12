@@ -10,6 +10,12 @@ class Workingon < Formula
     regex(/^v?(\d+(?:\.\d+)+)$/i)
   end
 
+  bottle do
+    root_url "https://github.com/keller00/homebrew-workingon-tap/releases/download/workingon-1.0.0"
+    sha256 cellar: :any,                 arm64_tahoe:  "f673d8398a273be903faa033fde89420dd203e64389c7d0279ccc060e4718a23"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "2daf1685a6d88985ef11f7e9bdcd89d7bae07eec69cb4ac63d9e16debf4b9739"
+  end
+
   depends_on "rust" => :build
   depends_on "sqlite"
 
