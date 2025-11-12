@@ -16,4 +16,10 @@ class Workingon < Formula
     system bin/"workingon", "--help"
     system bin/"workingon", "ls"
   end
+
+  livecheck do
+    url :stable
+    regex(/^v?(\d+(?:\.\d+)+)$/i)
+  end
+
 end
