@@ -11,9 +11,9 @@ class Workingon < Formula
   end
 
   bottle do
-    root_url "https://github.com/keller00/homebrew-workingon-tap/releases/download/workingon-1.1.1"
-    sha256 cellar: :any,                 arm64_tahoe:  "2edef839a10240c2033ce79303fbfbb42f37b25cfa7250a9c2c6bff50a89816f"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "0e72bacfdbf154ca03336a56a046acf4172c175f4d48caa4bd520a20be4641d7"
+    root_url "https://github.com/keller00/homebrew-workingon-tap/releases/download/workingon-1.1.2"
+    sha256 cellar: :any,                 arm64_tahoe:  "64065ea602bcb37ac52189e091a899ca7516bc1c9620a97eebeb94b2bbf8c247"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "97f4536253102f3ef74e5fdc49321cd5fcb3bac2de5baec9874006e498cdc35d"
   end
 
   depends_on "rust" => :build
