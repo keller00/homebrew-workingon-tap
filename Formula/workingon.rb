@@ -1,8 +1,8 @@
 class Workingon < Formula
   desc "CLI to track what you're working on"
   homepage "https://github.com/keller00/workingon"
-  url "https://github.com/keller00/workingon/archive/refs/tags/v1.1.2.tar.gz"
-  sha256 "f5818129a8bf2ddff267fff0711b09a44a1ee03c6d7d25ae5a1d84245de3f053"
+  url "https://github.com/keller00/workingon/archive/refs/tags/v1.1.3.tar.gz"
+  sha256 "43d5ca94d2937438e4c0d90c5ec954bd4b2b49e05951ff555dbff60978a52c79"
   license "MIT"
 
   livecheck do
